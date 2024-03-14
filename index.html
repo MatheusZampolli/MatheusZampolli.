@@ -1,216 +1,71 @@
-/* Estilos CSS para o body */
-@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
-
-
-body {
-    margin: 0; /* Remover todos os espaçamentos */
-    max-width: 100%; /* Limitar a largura ao tamanho da tela */
-    overflow-x: hidden; /* Ocultar a barra de rolagem horizontal se necessário */
-    background-color: #323753;
-    font-family: 'Poppins', sans-serif;
-}
-
-/* Estilos CSS para o header */
-header {
-    background-color: #2d314477; /* Cor de fundo do cabeçalho */
-    color: #fff; /* Cor do texto no cabeçalho */
-    padding: 30px; /* Espaçamento interno */
-    margin: 0; /* Remover todos os espaçamentos */
-    width: 100%; /* Ocupar toda a largura da página */
-    display: flex; /* Exibir os elementos em uma linha */
-    justify-content: flex-start; /* Alinhar os elementos à esquerda */
-    align-items: center; /* Alinhar os elementos verticalmente */
-    font-size: 20px;
-    position: absolute;
-    top: -0.5em;
-    position: fixed;
-    z-index: 999; /* Adiciona um índice z alto para garantir que a navegação fique acima de outros elementos */
-}
-
-/* Estilos para a div que contém o texto */
-.header-text {
-    color: rgb(255, 255, 255); /* Cor do texto preto */
-    position: absolute; /* Posicionamento absoluto */
-    left: 0; /* Alinhar à esquerda */
-    width: 100vw; /* Largura total da viewport */
-}
-
-/* Estilos para o texto <h1> */
-.header-text h1 {
-    font-size: 40px; /* Tamanho da fonte aumentado */
-    font-weight: normal; /* Estilo regular */
-    margin-bottom: 1px; /* Espaçamento entre o h1 e o h2 */
-    line-height: 1; /* Controla o espaçamento entre as linhas para evitar quebras */
-    white-space: nowrap; /* Evitar quebras de linha */
-    margin-left: 6em;
-    margin-top: 3em;
-    position: absolute;
-    left: -2.5em;
-    top: 3em;
-}
-
-/* Estilos para o texto <h2> */
-.header-text h2 {
-    color: #57D02C; /* Cor do texto para h2 */
-    font-size: 40px;
-    white-space: nowrap;
-    margin-top: 0.1px;
-    position: absolute;
-    left: 3.5em;
-    top: 7em;
-}
-
-/* Estilos para a logotipo(Matheus) */
-.logo {
-    font-size: 40px; /* Tamanho da fonte */
-    font-weight: bold; /* Negrito */
-    margin-right: 20px; /* Espaçamento à direita da logo */
-    margin-left: 20px;
-}
-
-/* Estilos para a navegação */
-nav ul {
-    list-style: none; /* Removendo os marcadores de lista */
-    margin: 0;
-    padding: 0;
-    display: flex; /* Exibir os elementos em uma linha */
-    justify-content: flex-start; /* Alinhar os itens à esquerda */
-}
-
-nav ul li {
-    margin-left: 15px; /* Espaçamento entre os itens */
-}
-
-nav ul li:nth-last-child(4) {
-    margin-left: 300px; /* Move o item "Inicio" 10 pixels para a esquerda */
-}
-
-nav ul li:last-child {
-    margin-left: 300px; /* Move o item "Contato" 10 pixels para a esquerda */
-}
-
-nav ul li a {
-    color: #fff; /* Cor dos links */
-    text-decoration: none; /* Removendo sublinhado */
-    margin-left: 40px; /* Move os itens 5px para a esquerda */
-}
-
-/* Estilos para o conteúdo principal (Meu nome é...)*/
-.conteudo-principal {
-    padding-bottom: 200px; /* Espaço extra na parte inferior para garantir que o conteúdo "Sobre Mim" não fique sobreposto pelo rodapé */
-    left: 100px;
-    top: 100%;
-    position: absolute; /* com position absolute da pra posicionar  o item onde quiser com left right e top*/
-    width: 90%; /*largura de onde vai até onde termina o container, não defini o height pq ai é só adicionar item e ir posicionando dentro
-    desse container que ele cria o scroll automaticamente tipo o texto-sobre-mim e o h2 que eu posicionei na mão*/
-    font-size: 40px;
-}
-
-/* sobre mim text */
-.conteudo-principal h2{
-    position: absolute;
-    font-size: 40px;
-    color: #57D02C;
-    margin-left: 50px;
-}
-
-/* Estilos para o texto dentro do elemento "Sobre Mim" */
-.texto-sobre-mim {
-    position: absolute;
-    color: #ffffff; /* Cor do texto */
-    font-size: 50px;
-    position: absolute;
-    font-size: 19.2px;
-    margin-left: 50px;
-    top: 50%;
-    font-family:monospace;
-    margin-bottom: 5e;
-}
-
-.Meusprojetos{
-    position: absolute;
-    top: 0em;
-    margin-top: 10em;
-    white-space: nowrap;
-    right: 5.5em;
-}
-
-.fale-comigo{
-    position: absolute;
-    top: 90em;
-    color:#57D02C;
-    left: 7em;
-    font-size: 20px;
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio Matheus Zampolli</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles_text.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header >
+        <div class="logo" id="topo">Matheus</div>
+        <nav>
+            <ul>
+                <li><a href="#topo">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header> 
+    <div class="header-text">
+        <h1>Olá, sou o Matheus Zampolli</h1>
+        <h2>Computer Engineer</h2>
+    </div>
+    <div class="conteudo-principal" id="sobre">
+        <div class="sobre-mim">
+            <h2 style="text-align: center;">Sobre Mim</h2>
+            <div class="texto-sobre-mim">
+                <p>Meu nome é Matheus Zampolli, faço engenharia da <br>computação e tenho enorme paixão em desenvolver <br> novas aplicações.</p>
+                <p>Tenho diversas habilidades como HTML, CSS, Java <br>Script, Node.js, Azure Cloud, GitHub, entre out- <br>ras...</p>
+                <p>Busco futuramente trabalhar com Analista de Dad- <br>os e ser um ótimo profissional.</p>
+                <div>
+                <h2 id="projetos" class="Meusprojetos">Meus Projetos</h2> <!-- Aqui está o título "Meus Projetos" -->
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="espaco-projetos" >
+        <!-- Espaço reservado para listar os projetos -->
+    </div>
+    <div class="fale-comigo" id="contato">
+        <h1 class="h1-texto-falecomigo">FALE COMIGO</h1>
+        <p class="descricao-falecomigo">
+            Brasil, São Paulo, São Paulo <br>
+            <br>
+            matheus@txtech.com.br <br>
+            <br>
+            +55 (11) 98916-7926</p>
+        <form class="formulario-final" action="/enviar.php" method="post">
+            <label class="nome-formulario" for="nome">Nome:</label>
+            <input class="tamanho-formulario-nome" type="text" id="nome" name="nome" required>
     
-}
-
-
-
-.descricao-falecomigo{
-    color: white;
-    padding-bottom: 1em;
-    position: absolute;
-    right: -50em;
+            <label class="email-formulario" for="email">Email:</label>
+            <input class="tamanho-formulario-email" type="email" id="email" name="email" required>
     
-}
-
-.formulario-final form {
-    max-width: 400px;
-    margin: 0 auto;
-    padding: 20px;
-    background-color: rgba(255, 255, 255, 0.8); /* Fundo transparente */
-    border-radius: 5px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    width: 10em;
-    position: absolute ;
+            <label class="mensagem-formulario" for="mensagem">Mensagem:</label>
+            <textarea class="tamanho-formulario-mensagem" id="mensagem" name="mensagem" rows="4" required></textarea>
     
-}
-
-label {
-    display: block;
-    margin-bottom: 10px;
-
-}
-
-
-
-.tamanho-formulario-nome{
-    width: 15em;
-    height: 1.5em;
-    }
-
-    .nome-formulario{
-        position: absolute;
-        top: 4.5em;
-        color: white;
-    }
-
-    .email-formulario{
-        color: white;
-        margin-bottom: -5px;
-      
-    }
-
-    .tamanho-formulario-email{
-    width: 15em;
-    height: 1.5em;
-    }
-
-    .mensagem-formulario{
-        color: white;
-        margin-bottom: -1px;
-
-    }
-
-    .tamanho-formulario-mensagem{
-        width: 15em;
-        height: 1.5em;
-
-    }
-
-    .botao-enviar{
-        width: 7em;
-        position: absolute;
-        bottom: -3em;
-        right: 13.5em;
-    }
+            <button class="botao-enviar"  type="submit">Enviar</button>
+        </form>
+    </div>
+    <footer>
+            
+    </footer>
+    
+</body>
+</html>
