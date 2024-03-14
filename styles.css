@@ -147,6 +147,7 @@ nav ul li a {
     padding-bottom: 1em;
     position: absolute;
     right: -50em;
+    
 }
 
 .formulario-final form {
@@ -166,3 +167,46 @@ label {
     margin-bottom: 10px;
 
 }
+
+
+
+.tamanho-formulario-nome{
+    width: 15em;
+    height: 1.5em;
+    }
+
+    .nome-formulario{
+        position: absolute;
+        top: 4.5em;
+        color: white;
+    }
+
+    .email-formulario{
+        color: white;
+        margin-bottom: -5px;
+      
+    }
+
+    .tamanho-formulario-email{
+    width: 15em;
+    height: 1.5em;
+    }
+
+    .mensagem-formulario{
+        color: white;
+        margin-bottom: -1px;
+
+    }
+
+    .tamanho-formulario-mensagem{
+        width: 15em;
+        height: 1.5em;
+
+    }
+
+    .botao-enviar{
+        width: 7em;
+        position: absolute;
+        bottom: -3em;
+        right: 13.5em;
+    }
