@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portifólio Matheus Zampolli</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="styles_text.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header >
+        <div class="logo" id="topo">Matheus</div>
+        <nav>
+            <ul>
+                <li><a href="#topo">Início</a></li>
+                <li><a href="#sobre">Sobre</a></li>
+                <li><a href="#projetos">Projetos</a></li>
+                <li><a href="#contato">Contato</a></li>
+            </ul>
+        </nav>
+    </header> 
+    <div class="header-text">
+        <h1>Olá, sou o Matheus Zampolli</h1>
+        <h2>Computer Engineer</h2>
+    </div>
+    <div class="conteudo-principal" id="sobre">
+        <div class="sobre-mim">
+            <h2 style="text-align: center;">Sobre Mim</h2>
+            <div class="texto-sobre-mim">
+                <p>Meu nome é Matheus Zampolli, faço engenharia da <br>computação e tenho enorme paixão em desenvolver <br> novas aplicações.</p>
+                <p>Tenho diversas habilidades como HTML, CSS, Java <br>Script, Node.js, Azure Cloud, GitHub, entre out- <br>ras...</p>
+                <p>Busco futuramente trabalhar com Analista de Dad- <br>os e ser um ótimo profissional.</p>
+                <div>
+                <h2 id="projetos" class="Meusprojetos">Meus Projetos</h2> <!-- Aqui está o título "Meus Projetos" -->
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="espaco-projetos" >
+        <!-- Espaço reservado para listar os projetos -->
+    </div>
+    <div class="fale-comigo" id="contato">
+        <h1>FALE COMIGO</h1>
+        <p class="descricao-falecomigo">
+            Brasil, São Paulo, São Paulo <br>
+            <br>
+            matheus@txtech.com.br <br>
+            <br>
+            +55 (11) 98916-7926</p>
+        <form class="formulario-final" action="/enviar.php" method="post">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome" required>
+    
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+    
+            <label for="mensagem">Mensagem:</label>
+            <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+    
+            <button type="submit">Enviar</button>
+        </form>
+    </div>
+    <footer>
+            
+    </footer>
+    
+</body>
+</html>
